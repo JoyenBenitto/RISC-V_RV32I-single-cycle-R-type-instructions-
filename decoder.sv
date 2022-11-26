@@ -1,4 +1,4 @@
-module decoder(instruction,out);
+module decoder(instruction,out);    // VERIFIED USING WAVEFORMS
 
 input logic [31:0]instruction;
 output logic [31:0]out;
@@ -26,7 +26,7 @@ begin
 						end
 						
       default:begin
-						out[31:0]=32'hffffffff;
+						out[31:0]=32'h0;
 				  end
 		endcase
 		

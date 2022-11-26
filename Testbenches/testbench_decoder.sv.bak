@@ -1,0 +1,19 @@
+`timescale 1ns/100ps
+
+module testbench_decoder();
+
+logic [31:0]instruction;
+logic [31:0]out;
+
+initial 
+
+	begin
+		$display("Testbench begins here")
+		instruction[31:0]= 32'b;
+		instruction[31:0]= 32'b;
+		instruction[31:0]= 32'h00000000;
+
+		$display("Testbench ends");
+	end	
+	
+endmodule

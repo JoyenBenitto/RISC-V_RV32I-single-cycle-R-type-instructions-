@@ -1,0 +1,9 @@
+vsim s
+# vsim s 
+# Start time: 12:27:59 on Nov 26,2022
+# ** Error: (vsim-3170) Could not find 's'.
+#         Searched libraries:
+#             E:/Projects/RISC V/Quartus_projects/RISC-V single Cycle/Modelsim/work
+# Error loading design
+# End time: 12:28:02 on Nov 26,2022, Elapsed time: 0:00:03
+# Errors: 1, Warnings: 5
