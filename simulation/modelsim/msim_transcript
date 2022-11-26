@@ -1,0 +1,59 @@
+# Reading pref.tcl
+# do RISC32_run_msim_gate_systemverilog.do
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work gate_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+. {RISC32.svo}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:23:00 on Nov 26,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+." RISC32.svo 
+# -- Compiling module ALU
+# -- Compiling module hard_block
+# 
+# Top level modules:
+# 	ALU
+# End time: 15:23:00 on Nov 26,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+E:/Projects/RISC\ V/Quartus_projects/RISC-V\ single\ Cycle/Testbenches {E:/Projects/RISC V/Quartus_projects/RISC-V single Cycle/Testbenches/testbench_ALU.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:23:01 on Nov 26,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+E:/Projects/RISC V/Quartus_projects/RISC-V single Cycle/Testbenches" E:/Projects/RISC V/Quartus_projects/RISC-V single Cycle/Testbenches/testbench_ALU.sv 
+# -- Compiling module testbench_ALU
+# 
+# Top level modules:
+# 	testbench_ALU
+# End time: 15:23:01 on Nov 26,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L gate_work -L work -voptargs="+acc"  testbench_ALU
+# vsim -t 1ps -L altera_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L gate_work -L work -voptargs=""+acc"" testbench_ALU 
+# Start time: 15:23:01 on Nov 26,2022
+# Loading sv_std.std
+# Loading work.testbench_ALU
+# Loading work.ALU
+# Loading work.hard_block
+# Loading fiftyfivenm_ver.fiftyfivenm_lcell_comb
+# Loading fiftyfivenm_ver.fiftyfivenm_io_obuf
+# Loading fiftyfivenm_ver.fiftyfivenm_io_ibuf
+# Loading fiftyfivenm_ver.fiftyfivenm_unvm
+# Loading fiftyfivenm_ver.fiftyfivenm_adcblock
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for '\~QUARTUS_CREATED_ADC1~ '.  Expected 8, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_ALU/u1/\~QUARTUS_CREATED_ADC1~  File: RISC32.svo Line: 5143
+# ** Warning: (vsim-3722) RISC32.svo(5143): [TFMPC] - Missing connection for port 'clk_dft'.
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# End time: 15:27:18 on Nov 26,2022, Elapsed time: 0:04:17
+# Errors: 0, Warnings: 2
